@@ -1,0 +1,164 @@
+.game {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0 0 0 0;
+
+    &.step1 {
+        .container {
+            margin-top: 10%;
+            position: relative;
+
+            .background {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.ruleOriginal {
+                    img {
+                        width: 80%;
+                    }
+
+                    @media (max-width: 768px) {
+                        img {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                &.ruleBonus {
+                    img {
+                        width: 90%;
+                    }
+
+                    @media (max-width: 768px) {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.step234 {
+        top: 15%;
+        @media (max-width: 768px) {
+            top: 10%;
+        }
+        .container {
+            >div {
+
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .choice {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 0px 50px;
+
+                @media (max-width: 768px) {
+                    flex-direction: column-reverse;
+                    padding: 0px 20px;
+                }
+
+                &__name {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: white;
+                    font-size: 1.2rem;
+                    margin-bottom: 20%;
+                    z-index: 10;
+
+                    @media (max-width: 768px) {
+                        margin-bottom: 0;
+                        margin-top: 30%;
+                        font-size: 1.4rem;
+                    }
+                }
+
+                &__box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+
+                &__waiting {
+                    padding: 90px;
+                    border-radius: 50%;
+                    background-color: rgb(23, 34, 62);
+
+                    @media (max-width: 768px) {
+                        padding: 50px;
+                    }
+                }
+
+            }
+
+            .playAgain {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 5%;
+                z-index: 2;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+
+                &--mobile {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    z-index: 2;
+                    margin-top: 10%;
+                }
+
+                .text {
+                    font-size: 3rem;
+                    color: white;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    margin-bottom: 5%;
+                    @media (max-width: 768px) {
+                        font-size: 5rem;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                button {
+                    letter-spacing: 2px;
+                    color: var(--Rock);
+                    border-radius: 6px;
+                    padding: 12px 60px;
+                    border: 1px solid black;
+                    text-transform: uppercase;
+                    background-color: white;
+                    cursor: pointer;
+                    font-weight: 700;
+                    transition: .2s ease-in-out;
+                    position: relative;
+                    @media (max-width: 768px) {
+                        font-size: 2rem;
+                        color: var(--DarkText);
+                        font-weight: 600;
+                    }
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
+
+                    &:active {
+                        transform: translateY(-1px);
+                    }
+                }
+            }
+        }
+    }
+}

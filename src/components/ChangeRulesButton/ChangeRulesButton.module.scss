@@ -1,0 +1,25 @@
+.changeRulesButton {
+    position: fixed;
+    right: 140px;
+    bottom: 4%;
+    button {
+        padding: 8px 24px;
+        border-radius: 4px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: white;
+        letter-spacing: 2px;
+        transition: .2s ease;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-2px);
+        }
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+    @media (max-width: 768px) {
+        position: initial;
+    }
+}

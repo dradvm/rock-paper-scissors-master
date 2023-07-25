@@ -1,0 +1,23 @@
+:root {
+    --Scissors: hsl(39, 89%, 49%);
+    --Paper: hsl(230, 89%, 62%);
+    --Rock: hsl(349, 71%, 52%);
+    --Lizard: hsl(261, 73%, 60%);
+    --Cyan: hsl(189, 59%, 53%);
+
+    --ScissorsGradient: hsl(40, 84%, 53%);
+    --PaperGradient: hsl(230, 89%, 65%);
+    --RockGradient: hsl(349, 70%, 56%);
+    --LizardGradient: hsl(261, 72%, 63%);
+    --CyanGradient: hsl(189, 58%, 57%);
+
+    --DarkText: hsl(229, 25%, 31%);
+    --ScoreText: hsl(229, 64%, 46%);
+    --HeaderOutline: hsl(217, 16%, 45%);
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 10px;
+    }
+}
